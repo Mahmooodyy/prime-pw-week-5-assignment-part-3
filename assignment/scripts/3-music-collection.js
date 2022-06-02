@@ -1,15 +1,14 @@
 console.log('***** Music Collection *****')
 
-let collection = []
+let collection =[]
 
-function addToCollection(title, artist, yearPublished){
-    return myMusic
+function addToCollection(title, artist, yearPublished) {
+const album = new Object ();
+album.title = title
+album.artist = artist
+album.yearPublished = yearPublished
+collection.push(album)
+return true
+};
 
-}
-
-const myMusic = {
-title: "Bylaw EP",
-artist: "Martin Garrix",
-yearPublished: "2018"
-
-}
+placeholder
