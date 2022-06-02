@@ -8,7 +8,5 @@ album.title = title
 album.artist = artist
 album.yearPublished = yearPublished
 collection.push(album)
-return true
+return album
 };
-
-placeholder
