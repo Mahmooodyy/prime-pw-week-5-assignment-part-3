@@ -7,7 +7,7 @@ function addToCollection(title, artist, yearPublished) {
         title,
         artist,
         yearPublished
-        }``
+        }
     myCollection.push(album)
     console.log(album);
     return album
@@ -29,7 +29,11 @@ function showCollection(array) {
 
     for (let i = 0; i < array.length; i++){
 
-         console.log(`${addToCollection.title} By: ${addToCollection[1]} Published in: ${addToCollection[2]}`);
+         console.log(`${array[i].title} By: ${array[i].artist} Published in: ${array[i].yearPublished}`);
 
     }    
 }showCollection(myCollection)
+
+function findByArtist(artist){
+    
+}
