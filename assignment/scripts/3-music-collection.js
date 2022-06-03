@@ -1,14 +1,14 @@
 console.log('***** Music Collection *****')
 
-let collection =[]
-let food =['potato']
+let myCollection =[]
 
 function addToCollection(title, artist, yearPublished) {
-    const album = new Object ();
-    album.title = title
-    album.artist = artist
-    album.yearPublished = yearPublished
-    collection.push(album)
+    const album = {
+        title,
+        artist,
+        yearPublished
+        }``
+    myCollection.push(album)
     console.log(album);
     return album
 };
@@ -20,27 +20,16 @@ addToCollection('Glory Sound Prep ', 'Jon Bellion', '2018')
 addToCollection('DAMN.', 'Kendrick Lamar', '2017')
 addToCollection('bb u ok?', 'San Holo', '2021')
 
-console.log(collection);
+console.log(myCollection);
+
 
 function showCollection(array) {
-
+    
     console.log(array.length);
 
     for (let i = 0; i < array.length; i++){
 
-        console.log(`${title} By: ${artist} Published in: ${yearPublished}`);  
+         console.log(`${addToCollection.title} By: ${addToCollection[1]} Published in: ${addToCollection[2]}`);
 
-    }
-    
-}
-showCollection(collection)
-
-function findByArtist(artist){
-    let sameArtist = []
-    for (let i = 0; i < collection.length; i++) {
-        if (condition) {
-            
-        }
-        
-    }
-}
+    }    
+}showCollection(myCollection)
