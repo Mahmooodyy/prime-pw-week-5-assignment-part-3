@@ -11,7 +11,7 @@ function addToCollection(title, artist, yearPublished) {
     myCollection.push(album)
     console.log(album);
     return album
-};
+};//end addToCollection
 
 addToCollection('Bylaw','Martin Garrix', '2018')
 addToCollection('The Human Condition', 'Jon Bellion', '2016')
@@ -32,7 +32,9 @@ function showCollection(array) {
          console.log(`${array[i].title} By: ${array[i].artist} Published in: ${array[i].yearPublished}`);
 
     }    
-}showCollection(myCollection)
+};// end showCollection
+
+showCollection(myCollection)
 
 function findByArtist(artist){
     const sameArtist = []
@@ -45,4 +47,8 @@ function findByArtist(artist){
         }
    }    
    return sameArtist
-}
+};//end findByArtist function
+
+console.log(findByArtist('Jon Bellion'));
+console.log(findByArtist('Glaive'));
+console.log(findByArtist('Not an Artist'));
