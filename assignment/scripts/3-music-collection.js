@@ -35,5 +35,14 @@ function showCollection(array) {
 }showCollection(myCollection)
 
 function findByArtist(artist){
-    
+    const sameArtist = []
+
+    for (let i = 0; i < myCollection.length; i++){
+
+        if (artist === myCollection[i].artist) {
+            
+            sameArtist.push(myCollection[i])
+        }
+   }    
+   return sameArtist
 }
